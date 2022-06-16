@@ -52,9 +52,16 @@ var gameConfig={
 /*====================================
 =            Game Status             =
 ====================================*/
-
+nosex="";
+nosey="";
+game_status="";
+function startgame(){
+game_status="start";
+document.getElementById("status").innerHTML="status: game is loading";
+}
 function game(){
-
+console.log("nosex=",nosex);
+console.log("nosey=",nosey);
   instializeInDraw();
   moveEnvironment(mario);
   drawSprites();
